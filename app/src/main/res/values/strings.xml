@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">visit Syria</string>
+    <string name="todo">TODO</string>
+    <string name="welcome_to">welcome to</string>
+    <string name="syria">SYRIA</string>
+    <string name="palmira">TODO</string>
+    <string name="first">Tour</string>
+    <string name="ask_for_help">ask for help</string>
+</resources>
