@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light"
+    android:orientation="vertical"
+    tools:context="com.example.abu_nadeem.myapplication.AboutusActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/light"
+        android:padding="8dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/mohammad_profile"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/batool_profile"
+            app:civ_border_color="#FF000000"
+            app:civ_border_width="2dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/mohammad_profile"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@id/mohammad_profile"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_toRightOf="@id/mohammad_profile"
+            android:fontFamily="cursive"
+            android:text="- 23 years old\n- Inforamtion System Engineer\n- Syria-Tartous"
+            android:textColor="@color/dark"
+            android:textSize="28sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/mohammad_profile"
+            android:layout_alignParentRight="true"
+            android:layout_alignRight="@id/mohammad_profile"
+            android:layout_below="@id/mohammad_profile"
+            android:layout_marginTop="16dp"
+            android:fontFamily="cursive"
+            android:text="Mohamad Refai"
+            android:textColor="@color/dark"
+            android:textSize="28sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/dark"
+        android:padding="8dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/batool_profile"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/batool_profile"
+            app:civ_border_color="#FF000000"
+            app:civ_border_width="2dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/batool_profile"
+            android:layout_alignParentRight="true"
+            android:layout_alignRight="@id/batool_profile"
+            android:layout_below="@id/batool_profile"
+            android:layout_marginTop="16dp"
+            android:fontFamily="cursive"
+            android:text="Batool Abuali"
+            android:textColor="@color/light"
+            android:textSize="28sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/batool_profile"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@id/batool_profile"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_toRightOf="@id/batool_profile"
+            android:fontFamily="cursive"
+            android:text="- 23 years old\n- Inforamtion System Engineer\n- Syria-Tartous"
+            android:textColor="@color/light"
+            android:textSize="28sp" />
+        <!--android:lines=-->
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/contact_us_btn"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.2"
+        android:autoLink="web"
+        android:fontFamily="cursive"
+        android:onClick="goToUrl"
+        android:text="hey!! Contact US"
+        android:textColor="@color/dark"
+
+        />
+</LinearLayout>
