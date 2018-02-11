@@ -4,7 +4,6 @@
     <modules>
       <module fileurl="file://C:\Users\batool\Documents\GitHub\visit_SYRIA\MyApplication.iml" filepath="C:\Users\batool\Documents\GitHub\visit_SYRIA\MyApplication.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://C:\Users\batool\Documents\GitHub\visit_SYRIA\app\app.iml" filepath="C:\Users\batool\Documents\GitHub\visit_SYRIA\app\app.iml" />
       <module fileurl="file://$PROJECT_DIR$/circleimageview/circleimageview.iml" filepath="$PROJECT_DIR$/circleimageview/circleimageview.iml" />
       <module fileurl="file://$PROJECT_DIR$/visit_SYRIA.iml" filepath="$PROJECT_DIR$/visit_SYRIA.iml" />
     </modules>
