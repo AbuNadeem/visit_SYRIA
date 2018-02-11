@@ -43,7 +43,6 @@
             android:id="@+id/imageButton4"
             android:layout_width="60dp"
             android:layout_height="60dp"
-
             android:layout_marginBottom="1dp"
             android:layout_marginEnd="8dp"
             android:layout_marginStart="8dp"
@@ -60,7 +59,6 @@
             android:id="@+id/imageButton2"
             android:layout_width="60dp"
             android:layout_height="60dp"
-
             android:layout_marginBottom="1dp"
             android:layout_marginEnd="8dp"
             android:layout_marginStart="8dp"
@@ -138,7 +136,6 @@
             android:layout_marginStart="8dp"
             android:text="@string/first"
             android:textAlignment="center"
-
             android:textColor="@color/white"
             android:textSize="18sp"
             app:layout_constraintEnd_toStartOf="@+id/fourth"
@@ -163,25 +160,24 @@
             android:id="@+id/imageButton8"
             android:layout_width="60dp"
             android:layout_height="60dp"
-
             android:layout_marginEnd="128dp"
             android:layout_marginRight="128dp"
             android:background="@drawable/aboutx"
             android:scaleType="fitCenter"
             app:layout_constraintEnd_toEndOf="parent"
             tools:ignore="ContentDescription,MissingConstraints"
-            tools:layout_editor_absoluteY="357dp" />
+            tools:layout_editor_absoluteY="357dp"
+            android:onClick="toAboutus"
+            />
 
         <ImageView
             android:id="@+id/imageButton7"
             android:layout_width="60dp"
-
+            tools:ignore="ContentDescription,MissingConstraints"
             android:layout_height="60dp"
-android:onClick="goToWiki"
             android:layout_marginLeft="68dp"
             android:layout_marginStart="68dp"
             android:layout_marginTop="60dp"
-
             android:background="@drawable/wikipedia_96px"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/first" />
@@ -189,7 +185,6 @@ android:onClick="goToWiki"
         <ImageButton
             android:id="@+id/imageButton6"
             android:layout_width="60dp"
-
             android:layout_height="60dp"
             android:layout_marginEnd="128dp"
             android:layout_marginRight="128dp"
