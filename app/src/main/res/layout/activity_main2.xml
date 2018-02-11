@@ -1,229 +1,164 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/black"
-
-    tools:context="com.example.abu_nadeem.myapplication.Main2Activity"
-    tools:layout_editor_absoluteY="25dp">
+    tools:context="com.example.abu_nadeem.myapplication.Main2Activity">
 
     <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:alpha=".5"
-        android:contentDescription="@string/tfdgfghoo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.7"
         android:scaleType="centerCrop"
-        android:src="@drawable/a1"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        android:src="@drawable/a1" />
 
-    <android.support.constraint.ConstraintLayout
-        android:id="@+id/relativeLayout"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0">
+    <ImageButton
+        android:id="@+id/gallery_img"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_above="@id/center"
+        android:layout_alignLeft="@id/tour_img"
+        android:layout_alignRight="@id/tour_img"
+        android:background="@drawable/gallery_96px"
+        android:scaleType="fitCenter" />
 
-        <ImageButton
-            android:id="@+id/imageButton4"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:layout_marginBottom="1dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="184dp"
-            android:background="@drawable/map_96px"
-            app:layout_constraintBottom_toTopOf="@+id/thirditem"
-            app:layout_constraintEnd_toStartOf="@+id/imageButton3"
-            app:layout_constraintHorizontal_bias="0.424"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/first"
-            tools:ignore="ContentDescription,MissingConstraints" />
+    <TextView
+        android:id="@+id/gallery_text_view"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/gallery_img"
+        android:layout_alignRight="@id/gallery_img"
+        android:layout_below="@id/gallery_img"
+        android:text="Gallery"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
 
-        <ImageButton
-            android:id="@+id/imageButton2"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:layout_marginBottom="1dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            android:background="@drawable/gallery_96px"
-            app:layout_constraintBottom_toTopOf="@+id/first"
-            app:layout_constraintEnd_toStartOf="@+id/imageButton6"
-            app:layout_constraintHorizontal_bias="0.421"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="1.0"
-            tools:ignore="ContentDescription,MissingConstraints,UnknownId" />
+    <ImageButton
+        android:id="@+id/wiki_img"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_above="@id/center"
+        android:layout_alignBottom="@id/gallery_img"
+        android:layout_alignLeft="@id/aboutus_img"
+        android:layout_alignRight="@id/aboutus_img"
+        android:layout_alignTop="@id/gallery_img"
+        android:layout_margin="16dp"
+        android:layout_toRightOf="@id/gallery_img"
+        android:background="@drawable/wikipedia_96px"
+        android:scaleType="fitCenter" />
 
-        <TextView
-            android:id="@+id/thirditem"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="216dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="1dp"
-            android:text="@string/location"
-            android:textAlignment="center"
-            android:textColor="@color/white"
-            android:textSize="18sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/aboutusbut"
-            app:layout_constraintHorizontal_bias="0.433"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageButton4" />
+    <TextView
+        android:id="@+id/wiki_text_view"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/wiki_img"
+        android:layout_alignRight="@id/wiki_img"
+        android:layout_below="@id/wiki_img"
+        android:text="Wiki Syria"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:lines="2"/>
 
-        <TextView
-            android:id="@+id/second"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
-            android:layout_marginEnd="110dp"
-            android:layout_marginLeft="208dp"
-            android:layout_marginRight="110dp"
-            android:layout_marginStart="208dp"
-            android:layout_marginTop="288dp"
-            android:text="@string/ask_for_help"
-            android:textAlignment="center"
-            android:textColor="@color/white"
-            android:textSize="18sp"
-            app:layout_constraintBottom_toTopOf="@+id/imageButton8"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.205" />
+    <View
+        android:id="@+id/center"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="50dp"
+        android:layout_marginTop="50dp" />
 
-        <ImageButton
-            android:id="@+id/imageButton3"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:layout_marginBottom="8dp"
-            android:layout_marginEnd="128dp"
-            android:layout_marginLeft="93dp"
-            android:layout_marginRight="128dp"
-            android:layout_marginStart="93dp"
-            android:layout_marginTop="8dp"
-            android:background="@drawable/help100px"
-            app:layout_constraintBottom_toTopOf="@+id/second"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/imageButton7"
-            app:layout_constraintTop_toBottomOf="@+id/fourth"
-            app:layout_constraintVertical_bias="1.0"
-            tools:ignore="ContentDescription,MissingConstraints" />
+    <ImageButton
+        android:id="@+id/aboutus_img"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignBottom="@id/center"
+        android:layout_alignTop="@id/center"
+        android:layout_toRightOf="@id/center"
+        android:background="@drawable/aboutx"
+        android:scaleType="fitCenter"
+        android:onClick="toAboutus"/>
 
-        <TextView
-            android:id="@+id/first"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="8dp"
-            android:layout_marginStart="8dp"
-            android:text="@string/first"
-            android:textAlignment="center"
-            android:textColor="@color/white"
-            android:textSize="18sp"
-            app:layout_constraintEnd_toStartOf="@+id/fourth"
-            app:layout_constraintHorizontal_bias="0.414"
-            app:layout_constraintStart_toStartOf="parent"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteY="149dp" />
+    <TextView
+        android:id="@+id/aboutus_text_view"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/aboutus_img"
+        android:layout_alignRight="@id/aboutus_img"
+        android:layout_below="@id/aboutus_img"
+        android:text="About Us"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
 
-        <TextView
-            android:id="@+id/fourth"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/fourth"
-            android:textAlignment="center"
-            android:textColor="@color/white"
-            android:textSize="18sp"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="222dp"
-            tools:layout_editor_absoluteY="149dp" />
+    <ImageButton
+        android:id="@+id/tour_img"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignBottom="@id/center"
+        android:layout_alignTop="@id/center"
+        android:layout_toLeftOf="@id/center"
+        android:background="@drawable/forword12"
+        android:scaleType="fitCenter" />
 
-        <ImageButton
-            android:id="@+id/imageButton8"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:layout_marginEnd="128dp"
-            android:layout_marginRight="128dp"
-            android:background="@drawable/aboutx"
-            android:scaleType="fitCenter"
-            app:layout_constraintEnd_toEndOf="parent"
-            tools:ignore="ContentDescription,MissingConstraints"
-            tools:layout_editor_absoluteY="357dp"
-            android:onClick="toAboutus"
-            />
+    <TextView
+        android:id="@+id/tour_text_view"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/tour_img"
+        android:layout_alignRight="@id/tour_img"
+        android:layout_below="@id/tour_img"
+        android:text="Tour"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
 
-        <ImageView
-            android:id="@+id/imageButton7"
-            android:layout_width="60dp"
-            tools:ignore="ContentDescription,MissingConstraints"
-            android:layout_height="60dp"
-            android:layout_marginLeft="68dp"
-            android:layout_marginStart="68dp"
-            android:layout_marginTop="60dp"
-            android:background="@drawable/wikipedia_96px"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/first" />
+    <ImageButton
+        android:id="@+id/map_img"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignLeft="@id/tour_img"
+        android:layout_alignRight="@id/tour_img"
+        android:layout_below="@id/center"
+        android:background="@drawable/gallery_96px"
+        android:scaleType="fitCenter" />
 
-        <ImageButton
-            android:id="@+id/imageButton6"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:layout_marginEnd="128dp"
-            android:layout_marginRight="128dp"
-            android:layout_marginTop="84dp"
-            android:background="@drawable/gallery_96px"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            tools:ignore="ContentDescription,MissingConstraints" />
+    <TextView
+        android:id="@+id/map_text_view"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/map_img"
+        android:layout_alignRight="@id/map_img"
+        android:layout_below="@id/map_img"
+        android:text="Map"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
 
-        <TextView
-            android:id="@+id/fifth"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
-            android:text="@string/wikisyria"
-            android:textAlignment="center"
-            android:textColor="@color/white"
-            android:textSize="18sp"
-            app:layout_constraintBottom_toTopOf="@+id/imageButton4"
-            app:layout_constraintTop_toBottomOf="@+id/imageButton7"
-            app:layout_constraintVertical_bias="0.062"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="70dp" />
+    <ImageButton
+        android:id="@+id/help_img"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignLeft="@id/aboutus_img"
+        android:layout_alignRight="@id/aboutus_img"
+        android:layout_below="@id/center"
+        android:layout_margin="16dp"
+        android:layout_toRightOf="@id/gallery_img"
+        android:background="@drawable/help100px"
+        android:scaleType="fitCenter" />
+    <TextView
+        android:id="@+id/help_text_view"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/help_img"
+        android:layout_alignRight="@id/help_img"
+        android:layout_below="@id/help_img"
+        android:text="Help"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
 
-        <TextView
-            android:id="@+id/aboutusbut"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
-            android:layout_marginTop="8dp"
-            android:text="@string/about_us"
-            android:textAlignment="center"
-            android:textColor="@color/white"
-            android:textSize="18sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageButton8"
-            app:layout_constraintVertical_bias="0.0"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="214dp" />
-    </android.support.constraint.ConstraintLayout>
-
-</android.support.constraint.ConstraintLayout>
+</RelativeLayout>
