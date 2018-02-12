@@ -21,7 +21,8 @@
         android:layout_alignLeft="@id/tour_img"
         android:layout_alignRight="@id/tour_img"
         android:background="@drawable/gallery_96px"
-        android:scaleType="fitCenter" />
+        android:scaleType="fitCenter"
+        android:onClick="gotogallery"/>
 
     <TextView
         android:id="@+id/gallery_text_view"
@@ -47,7 +48,8 @@
         android:layout_margin="16dp"
         android:layout_toRightOf="@id/gallery_img"
         android:background="@drawable/wikipedia_96px"
-        android:scaleType="fitCenter" />
+        android:scaleType="fitCenter"
+        android:onClick="gotowiki"/>
 
     <TextView
         android:id="@+id/wiki_text_view"

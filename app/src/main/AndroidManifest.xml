@@ -17,7 +17,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".Main2Activity" />
-        <activity android:name=".AboutusActivity"></activity>
+        <activity android:name=".AboutusActivity" />
+        <activity android:name=".gallery"></activity>
     </application>
 
 </manifest>
