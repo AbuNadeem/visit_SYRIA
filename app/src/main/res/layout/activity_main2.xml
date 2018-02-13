@@ -18,14 +18,13 @@
         android:layout_width="70dp"
         android:layout_height="70dp"
         android:layout_above="@id/center"
-        android:layout_alignLeft="@id/tour_img"
-        android:layout_alignRight="@id/tour_img"
+        android:layout_alignLeft="@id/notes_img"
+        android:layout_alignRight="@id/notes_img"
         android:background="@drawable/gallery_96px"
-       android:scaleType="center"
-    android:onClick="gotogallery"/>
+        android:onClick="gotogallery"
+        android:scaleType="center" />
 
     <TextView
-        android:id="@+id/gallery_text_view"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@id/gallery_img"
@@ -48,21 +47,20 @@
 
         android:layout_toRightOf="@id/gallery_img"
         android:background="@drawable/wikipedia_96px"
-        android:scaleType="fitCenter"
-        android:onClick="gotowiki"/>
+        android:onClick="gotowiki"
+        android:scaleType="fitCenter" />
 
     <TextView
-        android:id="@+id/wiki_text_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@id/wiki_img"
 
         android:layout_below="@id/wiki_img"
+
         android:text="WikiSyria"
         android:textAlignment="center"
         android:textColor="@color/white"
-        android:textSize="18sp"
-        android:lines="2"/>
+        android:textSize="18sp" />
 
     <View
         android:id="@+id/center"
@@ -81,11 +79,10 @@
         android:layout_alignTop="@id/center"
         android:layout_toRightOf="@id/center"
         android:background="@drawable/aboutx"
-        android:scaleType="fitCenter"
-        android:onClick="toAboutus"/>
+        android:onClick="toAboutus"
+        android:scaleType="fitCenter" />
 
     <TextView
-        android:id="@+id/aboutus_text_view"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@id/aboutus_img"
@@ -97,23 +94,22 @@
         android:textSize="18sp" />
 
     <ImageButton
-        android:id="@+id/tour_img"
+        android:id="@+id/notes_img"
         android:layout_width="70dp"
         android:layout_height="70dp"
 
         android:layout_alignTop="@id/center"
         android:layout_toLeftOf="@id/center"
-        android:background="@drawable/forword12"
+        android:background="@drawable/note_104px"
         android:scaleType="center" />
 
     <TextView
-        android:id="@+id/tour_text_view"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@id/tour_img"
-        android:layout_alignRight="@id/tour_img"
-        android:layout_below="@id/tour_img"
-        android:text="Tour"
+        android:layout_alignLeft="@id/notes_img"
+        android:layout_alignRight="@id/notes_img"
+        android:layout_below="@id/notes_img"
+        android:text="Notes"
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="18sp" />
@@ -122,14 +118,13 @@
         android:id="@+id/map_img"
         android:layout_width="70dp"
         android:layout_height="70dp"
-        android:layout_alignLeft="@id/tour_img"
-
+        android:layout_alignLeft="@id/notes_img"
         android:layout_alignTop="@id/help_img"
         android:background="@drawable/map_96px"
+        android:onClick="mapmsg"
         android:scaleType="fitCenter" />
 
     <TextView
-        android:id="@+id/map_text_view"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@id/map_img"
@@ -147,12 +142,12 @@
         android:layout_alignLeft="@id/aboutus_img"
 
         android:layout_below="@id/center"
-
+         android:onClick="helpmsg"
         android:layout_toRightOf="@id/gallery_img"
         android:background="@drawable/help100px"
         android:scaleType="fitCenter" />
+
     <TextView
-        android:id="@+id/help_text_view"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@id/help_img"
@@ -162,5 +157,8 @@
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="18sp" />
+
+
+
 
 </RelativeLayout>

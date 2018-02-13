@@ -26,8 +26,8 @@ android:scaleType="centerInside"
 
         <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
             android:id="@+id/mohammad_profile"
-            android:layout_width="150dp"
-            android:layout_height="150dp"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
             android:scaleType="centerCrop"
             android:src="@drawable/muhammed_profile"
             app:civ_border_color="#FF000000"
@@ -40,11 +40,12 @@ android:scaleType="centerInside"
             android:layout_marginBottom="19dp"
             android:layout_marginLeft="18dp"
             android:layout_marginStart="18dp"
-            android:layout_toEndOf="@+id/mohammad_profile"
+            android:fontFamily="cursive"
+
             android:layout_toRightOf="@+id/mohammad_profile"
-            android:text="- 23 years old\n- Inforamtion System Engineer\n- Syria-Tartous"
+            android:text="-Forum nickname: @AbuNadeem \n -29 years old\n -Proudly Syrian"
             android:textColor="@color/dark"
-            android:textSize="18sp" />
+            android:textSize="22sp" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -55,7 +56,7 @@ android:scaleType="centerInside"
             android:layout_below="@id/mohammad_profile"
             android:layout_marginTop="16dp"
             android:fontFamily="cursive"
-            android:text="Mohamad Refai"
+            android:text="Muhammed Al Refai"
             android:textColor="@color/dark"
             android:textSize="28sp"
             android:id="@+id/textView3"
@@ -73,8 +74,8 @@ android:scaleType="centerInside"
 
         <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
             android:id="@+id/batool_profile"
-            android:layout_width="150dp"
-            android:layout_height="150dp"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
             android:scaleType="centerCrop"
             android:src="@drawable/batool_profile"
             app:civ_border_color="#FF000000"
@@ -105,12 +106,11 @@ android:scaleType="centerInside"
             android:fontFamily="cursive"
             android:text="- 23 years old\n- Inforamtion System Engineer\n- Syria-Tartous"
             android:textColor="@color/light"
-            android:textSize="28sp" />
+            android:textSize="22sp" />
         <!--android:lines=-->
     </RelativeLayout>
 
     <Button
-        android:id="@+id/contact_us_btn"
         style="@style/Widget.AppCompat.Button.Borderless.Colored"
         android:layout_width="wrap_content"
         android:layout_height="0dp"
