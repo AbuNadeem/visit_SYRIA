@@ -9,20 +9,20 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:alpha="0.7"
+        android:alpha="0.5"
         android:scaleType="centerCrop"
         android:src="@drawable/a1" />
 
     <ImageButton
         android:id="@+id/gallery_img"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
         android:layout_above="@id/center"
         android:layout_alignLeft="@id/tour_img"
         android:layout_alignRight="@id/tour_img"
         android:background="@drawable/gallery_96px"
-        android:scaleType="fitCenter"
-        android:onClick="gotogallery"/>
+       android:scaleType="center"
+    android:onClick="gotogallery"/>
 
     <TextView
         android:id="@+id/gallery_text_view"
@@ -38,14 +38,14 @@
 
     <ImageButton
         android:id="@+id/wiki_img"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
         android:layout_above="@id/center"
         android:layout_alignBottom="@id/gallery_img"
         android:layout_alignLeft="@id/aboutus_img"
         android:layout_alignRight="@id/aboutus_img"
         android:layout_alignTop="@id/gallery_img"
-        android:layout_margin="16dp"
+
         android:layout_toRightOf="@id/gallery_img"
         android:background="@drawable/wikipedia_96px"
         android:scaleType="fitCenter"
@@ -53,12 +53,12 @@
 
     <TextView
         android:id="@+id/wiki_text_view"
-        android:layout_width="100dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@id/wiki_img"
-        android:layout_alignRight="@id/wiki_img"
+
         android:layout_below="@id/wiki_img"
-        android:text="Wiki Syria"
+        android:text="WikiSyria"
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="18sp"
@@ -66,18 +66,18 @@
 
     <View
         android:id="@+id/center"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="70dp"
+        android:layout_height="120dp"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        android:layout_marginBottom="50dp"
+
         android:layout_marginTop="50dp" />
 
     <ImageButton
         android:id="@+id/aboutus_img"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_alignBottom="@id/center"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+
         android:layout_alignTop="@id/center"
         android:layout_toRightOf="@id/center"
         android:background="@drawable/aboutx"
@@ -89,7 +89,7 @@
         android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@id/aboutus_img"
-        android:layout_alignRight="@id/aboutus_img"
+
         android:layout_below="@id/aboutus_img"
         android:text="About Us"
         android:textAlignment="center"
@@ -98,13 +98,13 @@
 
     <ImageButton
         android:id="@+id/tour_img"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_alignBottom="@id/center"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+
         android:layout_alignTop="@id/center"
         android:layout_toLeftOf="@id/center"
         android:background="@drawable/forword12"
-        android:scaleType="fitCenter" />
+        android:scaleType="center" />
 
     <TextView
         android:id="@+id/tour_text_view"
@@ -120,12 +120,12 @@
 
     <ImageButton
         android:id="@+id/map_img"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
         android:layout_alignLeft="@id/tour_img"
-        android:layout_alignRight="@id/tour_img"
-        android:layout_below="@id/center"
-        android:background="@drawable/gallery_96px"
+
+        android:layout_alignTop="@id/help_img"
+        android:background="@drawable/map_96px"
         android:scaleType="fitCenter" />
 
     <TextView
@@ -135,19 +135,19 @@
         android:layout_alignLeft="@id/map_img"
         android:layout_alignRight="@id/map_img"
         android:layout_below="@id/map_img"
-        android:text="Map"
+        android:text="Maps"
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="18sp" />
 
     <ImageButton
         android:id="@+id/help_img"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
         android:layout_alignLeft="@id/aboutus_img"
-        android:layout_alignRight="@id/aboutus_img"
+
         android:layout_below="@id/center"
-        android:layout_margin="16dp"
+
         android:layout_toRightOf="@id/gallery_img"
         android:background="@drawable/help100px"
         android:scaleType="fitCenter" />
@@ -156,7 +156,7 @@
         android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@id/help_img"
-        android:layout_alignRight="@id/help_img"
+
         android:layout_below="@id/help_img"
         android:text="Help"
         android:textAlignment="center"

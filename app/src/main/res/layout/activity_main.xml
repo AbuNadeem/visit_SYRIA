@@ -15,7 +15,7 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentTop="true"
-        android:alpha="0.46"
+        android:alpha="0.5"
 
         android:contentDescription="@string/todo"
         android:scaleType="centerCrop"

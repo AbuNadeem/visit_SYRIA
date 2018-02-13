@@ -30,7 +30,7 @@ public class gallery extends AppCompatActivity {
         Button btnNext = (Button) findViewById(R.id.buttonNext);
 
         imageSwitcher = (ImageSwitcher) findViewById(R.id.simpleImageSwitcher);
-        imageSwitcher.setImageResource(imageIds[0]);
+
 
         imageSwitcher.setFactory(new ViewSwitcher.ViewFactory()
 
@@ -75,9 +75,9 @@ public class gallery extends AppCompatActivity {
 
     public void prev(View view) {
         currentIndex--;
-        //  Check If index reaches maximum then reset it
-        if (currentIndex == count)
-            currentIndex = 0;
+        //  Check If index reaches minimum then reset it
+        if (currentIndex == -1)
+            currentIndex = count-1;
         imageSwitcher.setImageResource(imageIds[currentIndex]); // set the image in ImageSwitcher
 
 
