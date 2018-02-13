@@ -8,13 +8,13 @@ import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.ImageSwitcher;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 import android.widget.ViewSwitcher;
 
-public abstract class gallery extends AppCompatActivity {
 
+public class gallery extends AppCompatActivity {
 
-    // Array of Image IDs to Show In ImageSwitcher
+    ImageSwitcher imageSwitcher;  // Array of Image IDs to Show In ImageSwitcher
     int imageIds[] = {R.drawable.batool_profile, R.drawable.muhammed_profile, R.drawable.batool_profile, R.drawable.muhammed_profile, R.drawable.batool_profile};
     int count = imageIds.length;
     // to keep current Index of ImageID array
@@ -24,62 +24,43 @@ public abstract class gallery extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_gallery);
+
+
+        // get The references of Button and ImageSwitcher
+        Button btnNext = (Button) findViewById(R.id.buttonNext);
+
+        imageSwitcher = (ImageSwitcher) findViewById(R.id.simpleImageSwitcher);
+        imageSwitcher.setImageResource(imageIds[0]);
+
+        imageSwitcher.setFactory(new ViewSwitcher.ViewFactory()
+
+        {
+
+
+            public View makeView() {
+// TODO Auto-generated method stub
+
+// Create a new ImageView and set it's properties
+                ImageView imageView = new ImageView(getApplicationContext());
+                imageView.setScaleType(ImageView.ScaleType.FIT_CENTER);
+                imageView.setLayoutParams(new ImageSwitcher.LayoutParams(RelativeLayout.LayoutParams.MATCH_PARENT, RelativeLayout.LayoutParams.MATCH_PARENT));
+                return imageView;
+            }
+
+
+        });
+
+
+        // Declare in and out animations and load them using AnimationUtils class
+        Animation in = AnimationUtils.loadAnimation(this, android.R.anim.slide_in_left);
+        Animation out = AnimationUtils.loadAnimation(this, android.R.anim.slide_out_right);
+
+        imageSwitcher.setInAnimation(in);
+        imageSwitcher.setOutAnimation(out);
     }
-    // get The references of Button and ImageSwitcher
-    Button btnNext =(Button)findViewById(R.id.buttonNext);
-
-    ImageSwitcher sImageSwitcher =(ImageSwitcher)
-    findViewById(R.id.simpleImageSwitcher);
-    // Set the ViewFactory of the ImageSwitcher that will create ImageView object when asked
 
 
-
-
-
-
-    //  sImageSwitcher.ViewFactory(new ViewSwitcher.ViewFactory());
-
-
-
-
-
-
-        public View makeView () {
-        // TODO Auto-generated method stub
-
-        // Create a new ImageView and set it's properties
-        ImageView imageView = new ImageView(getApplicationContext());
-        // set Scale type of ImageView to Fit Center
-        imageView.setScaleType(ImageView.ScaleType.FIT_CENTER);
-        // set the Height And Width of ImageView To FIll PARENT
-        imageView.setLayoutParams(new ImageSwitcher.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.MATCH_PARENT));
-        return imageView;
-    }
-
-
-    // Declare in and out animations and load them using AnimationUtils class
-    Animation in = AnimationUtils.loadAnimation(this, android.R.anim.slide_in_left);
-    Animation out = AnimationUtils.loadAnimation(this, android.R.anim.slide_out_right);
-
-
-
-
-
-
-
-
-
-    // set the animation type to ImageSwitcher
-       // sImageSwitcher.setInAnimation(in);
-      //  sImageSwitcher.setOutAnimation(out);
-
-
-
-
-
-
-
-
+    //  set the animation type to ImageSwitcher
 
     // ClickListener for NEXT button
     // When clicked on Button ImageSwitcher will switch between Images
@@ -89,8 +70,17 @@ public abstract class gallery extends AppCompatActivity {
         //  Check If index reaches maximum then reset it
         if (currentIndex == count)
             currentIndex = 0;
-        sImageSwitcher.setImageResource(imageIds[currentIndex]); // set the image in ImageSwitcher
+        imageSwitcher.setImageResource(imageIds[currentIndex]); // set the image in ImageSwitcher
     }
 
+    public void prev(View view) {
+        currentIndex--;
+        //  Check If index reaches maximum then reset it
+        if (currentIndex == count)
+            currentIndex = 0;
+        imageSwitcher.setImageResource(imageIds[currentIndex]); // set the image in ImageSwitcher
+
+
+    }
 }
 

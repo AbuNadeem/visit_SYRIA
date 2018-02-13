@@ -7,6 +7,8 @@ import android.view.View;
 
 public class Main2Activity extends AppCompatActivity {
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,7 +27,7 @@ public class Main2Activity extends AppCompatActivity {
     }
 
     public void gotogallery(View view) {
-        Intent gallery = new Intent(this, gallery.class);
-        startActivity(gallery, null);
+        Intent galleryint = new Intent(this, gallery.class);
+        startActivity(galleryint, null);
     }
 }

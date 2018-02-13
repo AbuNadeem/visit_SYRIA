@@ -7,36 +7,44 @@
     android:background="@color/light"
     android:orientation="vertical"
     tools:context="com.example.abu_nadeem.myapplication.AboutusActivity">
+<ImageView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
 
+    android:src="@drawable/arabcoder_logo"
+android:scaleType="centerInside"
+    android:background="@color/dark"
+    tools:ignore="ContentDescription" />
     <RelativeLayout
+        android:paddingTop="20dp"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
         android:background="@color/light"
-        android:padding="8dp">
+        android:padding="8dp"
+        android:gravity="center_vertical">
 
         <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
             android:id="@+id/mohammad_profile"
             android:layout_width="150dp"
             android:layout_height="150dp"
             android:scaleType="centerCrop"
-            android:src="@drawable/batool_profile"
+            android:src="@drawable/muhammed_profile"
             app:civ_border_color="#FF000000"
             app:civ_border_width="2dp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignBottom="@id/mohammad_profile"
-            android:layout_alignParentRight="true"
-            android:layout_alignTop="@id/mohammad_profile"
-            android:layout_marginLeft="16dp"
-            android:layout_marginTop="16dp"
-            android:layout_toRightOf="@id/mohammad_profile"
-            android:fontFamily="cursive"
+            android:layout_above="@+id/textView3"
+            android:layout_marginBottom="19dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginStart="18dp"
+            android:layout_toEndOf="@+id/mohammad_profile"
+            android:layout_toRightOf="@+id/mohammad_profile"
             android:text="- 23 years old\n- Inforamtion System Engineer\n- Syria-Tartous"
             android:textColor="@color/dark"
-            android:textSize="28sp" />
+            android:textSize="18sp" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -49,7 +57,9 @@
             android:fontFamily="cursive"
             android:text="Mohamad Refai"
             android:textColor="@color/dark"
-            android:textSize="28sp" />
+            android:textSize="28sp"
+            android:id="@+id/textView3"
+            android:layout_alignStart="@id/mohammad_profile" />
 
     </RelativeLayout>
 
@@ -58,7 +68,8 @@
         android:layout_height="0dp"
         android:layout_weight="1"
         android:background="@color/dark"
-        android:padding="8dp">
+        android:padding="8dp"
+        android:gravity="center_vertical">
 
         <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
             android:id="@+id/batool_profile"
