@@ -10,6 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:alpha="0.5"
+        android:contentDescription="Background"
         android:scaleType="centerCrop"
         android:src="@drawable/a1" />
 
@@ -21,6 +22,7 @@
         android:layout_alignLeft="@id/notes_img"
         android:layout_alignRight="@id/notes_img"
         android:background="@drawable/gallery_96px"
+        android:contentDescription="Gallery"
         android:onClick="gotogallery"
         android:scaleType="center" />
 
@@ -44,9 +46,9 @@
         android:layout_alignLeft="@id/aboutus_img"
         android:layout_alignRight="@id/aboutus_img"
         android:layout_alignTop="@id/gallery_img"
-
         android:layout_toRightOf="@id/gallery_img"
         android:background="@drawable/wikipedia_96px"
+        android:contentDescription="Wikipedia"
         android:onClick="gotowiki"
         android:scaleType="fitCenter" />
 
@@ -68,17 +70,16 @@
         android:layout_height="120dp"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-
         android:layout_marginTop="50dp" />
 
     <ImageButton
         android:id="@+id/aboutus_img"
-        android:layout_width="70dp"
+        android:layout_width="80dp"
         android:layout_height="70dp"
-
         android:layout_alignTop="@id/center"
         android:layout_toRightOf="@id/center"
         android:background="@drawable/aboutx"
+        android:contentDescription="About us"
         android:onClick="toAboutus"
         android:scaleType="fitCenter" />
 
@@ -86,8 +87,9 @@
         android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@id/aboutus_img"
-
+        android:layout_alignRight="@id/aboutus_img"
         android:layout_below="@id/aboutus_img"
+        android:singleLine="true"
         android:text="About Us"
         android:textAlignment="center"
         android:textColor="@color/white"
@@ -97,10 +99,11 @@
         android:id="@+id/notes_img"
         android:layout_width="70dp"
         android:layout_height="70dp"
-
         android:layout_alignTop="@id/center"
         android:layout_toLeftOf="@id/center"
         android:background="@drawable/note_104px"
+        android:contentDescription="Notes"
+        android:onClick="notesMsg"
         android:scaleType="center" />
 
     <TextView
@@ -118,6 +121,7 @@
         android:id="@+id/map_img"
         android:layout_width="70dp"
         android:layout_height="70dp"
+        android:contentDescription="Maps"
         android:layout_alignLeft="@id/notes_img"
         android:layout_alignTop="@id/help_img"
         android:background="@drawable/map_96px"
@@ -140,25 +144,23 @@
         android:layout_width="70dp"
         android:layout_height="70dp"
         android:layout_alignLeft="@id/aboutus_img"
-
         android:layout_below="@id/center"
-         android:onClick="helpmsg"
         android:layout_toRightOf="@id/gallery_img"
         android:background="@drawable/help100px"
+        android:contentDescription="Help"
+        android:onClick="helpmsg"
         android:scaleType="fitCenter" />
 
     <TextView
         android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@id/help_img"
-
+        android:layout_alignRight="@id/help_img"
         android:layout_below="@id/help_img"
         android:text="Help"
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="18sp" />
-
-
 
 
 </RelativeLayout>

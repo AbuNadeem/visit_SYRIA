@@ -20,7 +20,7 @@ public class gallery extends AppCompatActivity {
             R.drawable.a21, R.drawable.a32, R.drawable.a47, R.drawable.a80};
     int count = imageIds.length;
     // to keep current Index of ImageID array
-    int currentIndex = -1;
+    int currentIndex = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -71,7 +71,7 @@ public class gallery extends AppCompatActivity {
         currentIndex++;
         //  Check If index reaches maximum then reset it
         if (currentIndex == count)
-            currentIndex = 0;
+            currentIndex = 1;
         imageSwitcher.setImageResource(imageIds[currentIndex]); // set the image in ImageSwitcher
     }
 

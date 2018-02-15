@@ -39,4 +39,8 @@ public class Main2Activity extends AppCompatActivity {
     public void helpmsg(View view) {
         Toast.makeText(this, "Coming soon,NEXT update", Toast.LENGTH_SHORT).show();
     }
+
+    public void notesMsg(View view){
+        Toast.makeText(this, "This is Verion 1.0\nWait for more updates in the next version :)", Toast.LENGTH_LONG).show();
+    }
 }
