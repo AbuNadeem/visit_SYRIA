@@ -56,22 +56,21 @@ public class gallery extends AppCompatActivity {
         // Declare in and out animations and load them using AnimationUtils class
         Animation in = AnimationUtils.loadAnimation(this, android.R.anim.slide_in_left);
         Animation out = AnimationUtils.loadAnimation(this, android.R.anim.slide_out_right);
-
+        //  set the animation type to ImageSwitcher
         imageSwitcher.setInAnimation(in);
         imageSwitcher.setOutAnimation(out);
+//loading first image as default img
+        imageSwitcher.setImageResource(imageIds[currentIndex]);
     }
 
 
-    //  set the animation type to ImageSwitcher
-
-    // ClickListener for NEXT button
     // When clicked on Button ImageSwitcher will switch between Images
-    // The current Image will go OUT and next Image  will come in with specified animation
+
     public void nxt(View view) {
         currentIndex++;
         //  Check If index reaches maximum then reset it
         if (currentIndex == count)
-            currentIndex = 1;
+            currentIndex = 0;
         imageSwitcher.setImageResource(imageIds[currentIndex]); // set the image in ImageSwitcher
     }
 

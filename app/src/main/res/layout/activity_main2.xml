@@ -9,6 +9,9 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
         android:alpha="0.5"
         android:contentDescription="Background"
         android:scaleType="centerCrop"
@@ -74,7 +77,7 @@
 
     <ImageButton
         android:id="@+id/aboutus_img"
-        android:layout_width="80dp"
+        android:layout_width="70dp"
         android:layout_height="70dp"
         android:layout_alignTop="@id/center"
         android:layout_toRightOf="@id/center"
