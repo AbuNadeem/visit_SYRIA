@@ -41,14 +41,15 @@
             android:layout_height="wrap_content"
             android:layout_above="@+id/textView3"
             android:layout_marginBottom="19dp"
-            android:layout_marginLeft="18dp"
+            android:layout_marginLeft="8dp"
             android:layout_marginStart="18dp"
+            android:textStyle="italic|bold"
             android:layout_toRightOf="@+id/mohammad_profile"
             android:alpha="0.7"
             android:onClick="goToMohammadUrl"
-            android:text="-Forum nickname: @AbuNadeem \n -29 years old\n -Proudly Syrian"
+            android:text="- Forum nickname: @AbuNadeem \n - 29 years old\n - Proudly Syrian"
             android:textColor="@color/dark"
-            android:textSize="16sp" />
+            android:textSize="18sp" />
 
         <TextView
             android:id="@+id/textView3"
@@ -105,14 +106,15 @@
             android:layout_alignBottom="@id/batool_profile"
             android:layout_alignParentRight="true"
             android:layout_alignTop="@id/batool_profile"
-            android:layout_marginLeft="16dp"
+            android:layout_marginLeft="8dp"
             android:layout_marginTop="16dp"
             android:layout_toRightOf="@id/batool_profile"
             android:alpha=".7"
             android:onClick="goToBatoolUrl"
-            android:text="- 23 years old\n- Inforamtion System Engineer\n- Syria-Tartous"
+            android:text="- 23 years old\n- Inforamtion System Eng\n- Syria/Tartous"
             android:textColor="@color/light"
-            android:textSize="16sp" />
+            android:textSize="18sp"
+            android:textStyle="bold|italic"/>
         <!--android:lines=-->
     </RelativeLayout>
 

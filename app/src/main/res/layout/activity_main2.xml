@@ -38,7 +38,8 @@
         android:text="Gallery"
         android:textAlignment="center"
         android:textColor="@color/white"
-        android:textSize="18sp" />
+        android:textSize="16sp"
+        android:layout_marginTop="8dp" />
 
     <ImageButton
         android:id="@+id/wiki_img"
@@ -65,7 +66,8 @@
         android:text="WikiSyria"
         android:textAlignment="center"
         android:textColor="@color/white"
-        android:textSize="18sp" />
+        android:textSize="16sp"
+        android:layout_marginTop="8dp" />
 
     <View
         android:id="@+id/center"
@@ -96,7 +98,8 @@
         android:text="About Us"
         android:textAlignment="center"
         android:textColor="@color/white"
-        android:textSize="18sp" />
+        android:textSize="16sp"
+        android:layout_marginTop="8dp"/>
 
     <ImageButton
         android:id="@+id/notes_img"
@@ -118,7 +121,8 @@
         android:text="Notes"
         android:textAlignment="center"
         android:textColor="@color/white"
-        android:textSize="18sp" />
+        android:textSize="16sp"
+        android:layout_marginTop="8dp" />
 
     <ImageButton
         android:id="@+id/map_img"
@@ -140,7 +144,8 @@
         android:text="Maps"
         android:textAlignment="center"
         android:textColor="@color/white"
-        android:textSize="18sp" />
+        android:textSize="16sp"
+        android:layout_marginTop="8dp" />
 
     <ImageButton
         android:id="@+id/help_img"
@@ -163,7 +168,8 @@
         android:text="Help"
         android:textAlignment="center"
         android:textColor="@color/white"
-        android:textSize="18sp" />
+        android:textSize="16sp"
+        android:layout_marginTop="8dp" />
 
 
 </RelativeLayout>
